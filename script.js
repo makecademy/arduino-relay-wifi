@@ -13,7 +13,7 @@ function relayOn(){
 	
 	form = document.getElementById("relay");
 	form.method = "GET";
-	form.action = "simple_relay.php";
+	form.action = "relay.php";
 	form.submit();
 }
 
@@ -24,6 +24,6 @@ function relayOff(){
 	
 	form = document.getElementById("relay");
 	form.method = "GET";
-	form.action = "simple_relay.php";
+	form.action = "relay.php";
 	form.submit();
 }

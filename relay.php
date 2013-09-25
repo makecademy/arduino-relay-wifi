@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<form id="relay" action="remote_relay.php" method="GET">
+	<form id="relay" action="relay.php" method="GET">
     	<input type="button" id="submitOn" class="relayButton" value="On" onClick="relayOn()"/>
     	<input type="button" id="submitOff" class="relayButton" value="Off" onClick="relayOff()"/>
 		<input type="hidden" name="total" id="total" value="">

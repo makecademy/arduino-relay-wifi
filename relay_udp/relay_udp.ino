@@ -37,9 +37,9 @@ Adafruit_CC3000 cc3000 = Adafruit_CC3000(ADAFRUIT_CC3000_CS, ADAFRUIT_CC3000_IRQ
 Adafruit_CC3000_Client client;
                                          
 // Local server IP, port, and repository (change with your settings !)
-uint32_t ip = cc3000.IP2U32(192,168,0,14);
+uint32_t ip = cc3000.IP2U32(192,168,0,1);
 int port = 9999;
-String repository = "/simple-relay-wifi/";
+String repository = "/arduino-relay-wifi/";
 
 void setup() {
    
@@ -65,7 +65,7 @@ void setup() {
     Serial.println(F("failed"));
     return;
   }
-  
+
 }
 
 void loop() {
