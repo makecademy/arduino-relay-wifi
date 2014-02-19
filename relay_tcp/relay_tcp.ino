@@ -69,22 +69,20 @@ void setup() {
 
 void loop() {
   
-  // Send request to get relay state
-  String request = "GET "+ repository + "server.php HTTP/1.0";
-  String result = send_request(request);
+   // Send request to get relay state
+   String request = "GET "+ repository + "server.php HTTP/1.0";
+   String result = send_request(request);
   
-  // Change relay state accordingly
-  // Request received ?  
-      if(result.endsWith("Off"))
-      {
-         digitalWrite(relay_pin,LOW);
-      }
+   // Change relay state accordingly
+   if(result.endsWith("Off"))
+   {
+     digitalWrite(relay_pin,LOW);
+   }
       
-      if(result.endsWith("On"))
-      {
-         digitalWrite(relay_pin,HIGH);
-      }
-  
+   if(result.endsWith("On"))
+   {
+      digitalWrite(relay_pin,HIGH);
+   }
 }
 
 // Function to send a TCP request and get the result as a string
