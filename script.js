@@ -9,7 +9,7 @@ window.onload = function(){
 function relayOn(){
 	
 	hidden = document.getElementById("total");
-	hidden.value = "1";
+	hidden.value = "On";
 	
 	form = document.getElementById("relay");
 	form.method = "GET";
@@ -20,7 +20,7 @@ function relayOn(){
 function relayOff(){
 	
 	hidden = document.getElementById("total");
-	hidden.value = "0";
+	hidden.value = "Off";
 	
 	form = document.getElementById("relay");
 	form.method = "GET";
